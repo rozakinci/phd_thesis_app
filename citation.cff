@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Özakıncı
+    given-names: Rana
+    orcid: https://orcid.org/0000-0002-7803-453X
+title: "A Fuzzy TOPSIS implementation and its web-based usage in the scope of software defect prediction methd selection"
+version: 1.0.0
+doi: 10.5281/zenodo.6478564
+date-released: 2022-20-05
