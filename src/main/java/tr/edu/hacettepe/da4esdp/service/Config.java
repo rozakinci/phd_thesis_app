@@ -18,7 +18,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_1_ACCURACY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_1_MAINTAINABILITY = Fuzzy.LOW;
     static final Fuzzy DM1_ALTERNATIVE_1_SPEED = Fuzzy.LOW;
-    static final Fuzzy DM1_ALTERNATIVE_2_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM1_ALTERNATIVE_2_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_2_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_2_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_2_OUTLIER = Fuzzy.AVERAGE;
@@ -27,7 +28,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_2_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_2_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_2_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM1_ALTERNATIVE_3_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM1_ALTERNATIVE_3_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_3_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_3_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_3_OUTLIER = Fuzzy.VERY_LOW;
@@ -36,7 +38,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_3_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_3_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_3_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM1_ALTERNATIVE_4_CAUSALITY = Fuzzy.LOW;
+
+  static final Fuzzy DM1_ALTERNATIVE_4_CAUSALITY = Fuzzy.LOW;
     static final Fuzzy DM1_ALTERNATIVE_4_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM1_ALTERNATIVE_4_MISSING = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_4_OUTLIER = Fuzzy.AVERAGE;
@@ -45,7 +48,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_4_ACCURACY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_4_MAINTAINABILITY = Fuzzy.LOW;
     static final Fuzzy DM1_ALTERNATIVE_4_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM1_ALTERNATIVE_5_CAUSALITY = Fuzzy.LOW;
+
+  static final Fuzzy DM1_ALTERNATIVE_5_CAUSALITY = Fuzzy.LOW;
     static final Fuzzy DM1_ALTERNATIVE_5_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_5_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_5_OUTLIER = Fuzzy.AVERAGE;
@@ -54,7 +58,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_5_ACCURACY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_5_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_5_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM1_ALTERNATIVE_6_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM1_ALTERNATIVE_6_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_6_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_6_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_6_OUTLIER = Fuzzy.HIGH;
@@ -63,7 +68,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_6_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_6_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_6_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM1_ALTERNATIVE_7_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM1_ALTERNATIVE_7_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_7_UNCERTAINTY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_7_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_7_OUTLIER = Fuzzy.HIGH;
@@ -72,7 +78,8 @@ public class Config {
     static final Fuzzy DM1_ALTERNATIVE_7_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_7_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_7_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM1_ALTERNATIVE_8_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM1_ALTERNATIVE_8_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_8_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM1_ALTERNATIVE_8_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM1_ALTERNATIVE_8_OUTLIER = Fuzzy.HIGH;
@@ -91,7 +98,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_1_ACCURACY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM2_ALTERNATIVE_1_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM2_ALTERNATIVE_1_SPEED = Fuzzy.LOW;
-    static final Fuzzy DM2_ALTERNATIVE_2_CAUSALITY = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_2_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_2_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_2_MISSING = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_2_OUTLIER = Fuzzy.OTHER;
@@ -100,7 +108,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_2_ACCURACY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_2_MAINTAINABILITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_2_SPEED = Fuzzy.OTHER;
-    static final Fuzzy DM2_ALTERNATIVE_3_CAUSALITY = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_3_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_3_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_3_MISSING = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_3_OUTLIER = Fuzzy.OTHER;
@@ -109,7 +118,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_3_ACCURACY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_3_MAINTAINABILITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_3_SPEED = Fuzzy.OTHER;
-    static final Fuzzy DM2_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_HIGH;
+
+  static final Fuzzy DM2_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM2_ALTERNATIVE_4_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM2_ALTERNATIVE_4_MISSING = Fuzzy.LOW;
     static final Fuzzy DM2_ALTERNATIVE_4_OUTLIER = Fuzzy.LOW;
@@ -118,7 +128,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_4_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM2_ALTERNATIVE_4_MAINTAINABILITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM2_ALTERNATIVE_4_SPEED = Fuzzy.HIGH;
-    static final Fuzzy DM2_ALTERNATIVE_5_CAUSALITY = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_5_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_5_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_5_MISSING = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_5_OUTLIER = Fuzzy.OTHER;
@@ -126,7 +137,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_5_COMPLEXITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_5_ACCURACY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_5_MAINTAINABILITY = Fuzzy.OTHER;
-    static final Fuzzy DM2_ALTERNATIVE_5_SPEED = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_5_SPEED = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_6_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_6_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_6_MISSING = Fuzzy.OTHER;
@@ -136,7 +148,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_6_ACCURACY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_6_MAINTAINABILITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_6_SPEED = Fuzzy.OTHER;
-    static final Fuzzy DM2_ALTERNATIVE_7_CAUSALITY = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_7_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_7_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_7_MISSING = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_7_OUTLIER = Fuzzy.OTHER;
@@ -145,7 +158,8 @@ public class Config {
     static final Fuzzy DM2_ALTERNATIVE_7_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM2_ALTERNATIVE_7_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM2_ALTERNATIVE_7_SPEED = Fuzzy.HIGH;
-    static final Fuzzy DM2_ALTERNATIVE_8_CAUSALITY = Fuzzy.OTHER;
+
+  static final Fuzzy DM2_ALTERNATIVE_8_CAUSALITY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_8_UNCERTAINTY = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_8_MISSING = Fuzzy.OTHER;
     static final Fuzzy DM2_ALTERNATIVE_8_OUTLIER = Fuzzy.OTHER;
@@ -164,7 +178,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_1_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_1_MAINTAINABILITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_1_SPEED = Fuzzy.HIGH;
-    static final Fuzzy DM3_ALTERNATIVE_2_CAUSALITY = Fuzzy.VERY_HIGH;
+
+  static final Fuzzy DM3_ALTERNATIVE_2_CAUSALITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_2_UNCERTAINTY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_2_MISSING = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_2_OUTLIER = Fuzzy.HIGH;
@@ -173,7 +188,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_2_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_2_MAINTAINABILITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_2_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM3_ALTERNATIVE_3_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_3_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_3_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_3_MISSING = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_3_OUTLIER = Fuzzy.HIGH;
@@ -182,7 +198,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_3_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_3_MAINTAINABILITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_3_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM3_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_4_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_4_MISSING = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_4_OUTLIER = Fuzzy.OTHER;
@@ -191,7 +208,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_4_ACCURACY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_4_MAINTAINABILITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_4_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM3_ALTERNATIVE_5_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_5_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_5_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_5_MISSING = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_5_OUTLIER = Fuzzy.LOW;
@@ -200,7 +218,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_5_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_5_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_5_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM3_ALTERNATIVE_6_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_6_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_6_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_6_MISSING = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_6_OUTLIER = Fuzzy.LOW;
@@ -209,7 +228,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_6_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_6_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_6_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM3_ALTERNATIVE_7_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_7_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_7_UNCERTAINTY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_7_MISSING = Fuzzy.VERY_HIGH;
     static final Fuzzy DM3_ALTERNATIVE_7_OUTLIER = Fuzzy.AVERAGE;
@@ -218,7 +238,8 @@ public class Config {
     static final Fuzzy DM3_ALTERNATIVE_7_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM3_ALTERNATIVE_7_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM3_ALTERNATIVE_7_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM3_ALTERNATIVE_8_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM3_ALTERNATIVE_8_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM3_ALTERNATIVE_8_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_8_MISSING = Fuzzy.LOW;
     static final Fuzzy DM3_ALTERNATIVE_8_OUTLIER = Fuzzy.AVERAGE;
@@ -237,7 +258,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_1_ACCURACY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM4_ALTERNATIVE_1_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_1_SPEED = Fuzzy.VERY_LOW;
-    static final Fuzzy DM4_ALTERNATIVE_2_CAUSALITY = Fuzzy.VERY_HIGH;
+
+  static final Fuzzy DM4_ALTERNATIVE_2_CAUSALITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM4_ALTERNATIVE_2_UNCERTAINTY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM4_ALTERNATIVE_2_MISSING = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_2_OUTLIER = Fuzzy.HIGH;
@@ -246,7 +268,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_2_ACCURACY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_2_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_2_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM4_ALTERNATIVE_3_CAUSALITY = Fuzzy.AVERAGE;
+
+  static final Fuzzy DM4_ALTERNATIVE_3_CAUSALITY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_3_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_3_MISSING = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_3_OUTLIER = Fuzzy.LOW;
@@ -255,7 +278,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_3_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_3_MAINTAINABILITY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_3_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM4_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_HIGH;
+
+  static final Fuzzy DM4_ALTERNATIVE_4_CAUSALITY = Fuzzy.VERY_HIGH;
     static final Fuzzy DM4_ALTERNATIVE_4_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_4_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_4_OUTLIER = Fuzzy.AVERAGE;
@@ -264,7 +288,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_4_ACCURACY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_4_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_4_SPEED = Fuzzy.VERY_LOW;
-    static final Fuzzy DM4_ALTERNATIVE_5_CAUSALITY = Fuzzy.LOW;
+
+  static final Fuzzy DM4_ALTERNATIVE_5_CAUSALITY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_5_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_5_MISSING = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_5_OUTLIER = Fuzzy.AVERAGE;
@@ -273,7 +298,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_5_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_5_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_5_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM4_ALTERNATIVE_6_CAUSALITY = Fuzzy.LOW;
+
+  static final Fuzzy DM4_ALTERNATIVE_6_CAUSALITY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_6_UNCERTAINTY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_6_MISSING = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_6_OUTLIER = Fuzzy.AVERAGE;
@@ -282,7 +308,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_6_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_6_MAINTAINABILITY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_6_SPEED = Fuzzy.AVERAGE;
-    static final Fuzzy DM4_ALTERNATIVE_7_CAUSALITY = Fuzzy.VERY_LOW;
+
+  static final Fuzzy DM4_ALTERNATIVE_7_CAUSALITY = Fuzzy.VERY_LOW;
     static final Fuzzy DM4_ALTERNATIVE_7_UNCERTAINTY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_7_MISSING = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_7_OUTLIER = Fuzzy.LOW;
@@ -291,7 +318,8 @@ public class Config {
     static final Fuzzy DM4_ALTERNATIVE_7_ACCURACY = Fuzzy.HIGH;
     static final Fuzzy DM4_ALTERNATIVE_7_MAINTAINABILITY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_7_SPEED = Fuzzy.VERY_HIGH;
-    static final Fuzzy DM4_ALTERNATIVE_8_CAUSALITY = Fuzzy.LOW;
+
+  static final Fuzzy DM4_ALTERNATIVE_8_CAUSALITY = Fuzzy.LOW;
     static final Fuzzy DM4_ALTERNATIVE_8_UNCERTAINTY = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_8_MISSING = Fuzzy.AVERAGE;
     static final Fuzzy DM4_ALTERNATIVE_8_OUTLIER = Fuzzy.LOW;
