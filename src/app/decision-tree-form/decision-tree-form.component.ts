@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {IDecisionTree, nodeList, TreeNode} from "./nodes";
+import {Router} from "@angular/router";
+import {McdaService} from "../service/mcda.service";
 
 @Component({
   selector: "app-decision-tree-form",
@@ -14,7 +16,7 @@ export class DecisionTreeFormComponent implements OnInit {
   public treeJSONhidden: boolean = true;
   public nodeJSONhidden: boolean = true;
 
-  constructor() {
+  constructor(private router: Router, private mcdaService: McdaService) {
   }
 
   ngOnInit() {
@@ -54,5 +56,18 @@ export class DecisionTreeFormComponent implements OnInit {
       node: this.currentNode,
       index: this.decisionTree.length
     });
+  }
+
+  proceed() {
+
+
+    let selectedAlts = this.currentNode.resultList;
+    this.mcdaService.possibleAlternativeList = [];
+    selectedAlts.forEach(value => {
+      this.mcdaService.possibleAlternativeList.push(value);
+
+    })
+    console.log(selectedAlts);
+    this.router.navigate(['/', 'alternatives']);
   }
 }

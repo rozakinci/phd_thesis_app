@@ -3,6 +3,7 @@ import {Alternative} from "../../model/alternative";
 import {AlternativeService} from "../../service/alternative.service";
 import {Criteria} from "../../model/criteria";
 import {Weight} from "../../model/weights";
+import {McdaService} from "../../service/mcda.service";
 
 @Component({
   selector: 'app-alternative-list',
@@ -16,7 +17,7 @@ export class AlternativeListComponent implements OnInit {
   criteriaList: Criteria[] = [];
   errorMessage = '';
 
-  constructor(private alternativeService: AlternativeService) {
+  constructor(private alternativeService: AlternativeService, private mcdaService: McdaService) {
     this.setWeightsDefaultValues();
     this.setCriteriaList();
     this.setDefaultResultList();
@@ -44,6 +45,27 @@ export class AlternativeListComponent implements OnInit {
     this.alternativeService.findAll().subscribe(data => {
       this.alternatives = data;
     });
+
+    console.log("ngoninit fuzzy topsis");
+    console.log(this.mcdaService.possibleAlternativeList);
+    this.resultList = [];
+    if (this.mcdaService.possibleAlternativeList.length > 1) {
+      this.mcdaService.possibleAlternativeList.forEach(selectedAltFromDT => {
+        this.resultList.push(selectedAltFromDT);
+
+      })
+    } else {
+      this.resultList = [];
+      this.resultList.push(new Alternative("ANN", 0));
+      this.resultList.push(new Alternative("BBN", 0));
+      this.resultList.push(new Alternative("DT", 0));
+      this.resultList.push(new Alternative("FRBC", 0));
+      this.resultList.push(new Alternative("LinR", 0));
+      this.resultList.push(new Alternative("LogR", 0));
+      this.resultList.push(new Alternative("NB", 0));
+      this.resultList.push(new Alternative("SVM", 0));
+    }
+
   }
 
   clearAllWeights() {

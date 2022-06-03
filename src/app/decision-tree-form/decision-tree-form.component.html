@@ -1,27 +1,35 @@
 <ng-container *ngIf="!isFinal(currentNode)">
   <strong>QUESTION:</strong> {{ currentNode.description }}
   <br>
-  <button (click)="yes()">Yes</button>
+  <br>
+  <button (click)="yes()" class='btn btn-info'>Yes</button>
   &nbsp;
-  <button (click)="no()">No</button>
+  <button (click)="no()" class='btn btn-info'>No</button>
+  &nbsp;
+  <button (click)="reset()" class='btn btn-info'>Reset</button>
 </ng-container>
 
 <ng-container *ngIf="isFinal(currentNode)">
   <ul>
     <li *ngFor="let item of decisionTree">
       <ng-container *ngIf="item.index != decisionTree.length - 1">
-        <strong>Q: </strong> {{item.node.description}} <u>{{item.node.decision ? 'YES' : 'NO'}}</u> -->&nbsp;
+        <strong>Question: </strong> {{item.node.description}} <u>{{item.node.decision ? 'YES' : 'NO'}}</u>
       </ng-container>
 
       <ng-container *ngIf="item.index == decisionTree.length - 1">
-        <strong [style.color]="'red'">ANSWER: </strong> {{item.node.description}}
+        <strong [style.color]="'green'">ANSWER: </strong> {{item.node.description}}
       </ng-container>
     </li>
   </ul>
+  <button (click)="reset()" class='btn btn-info'>Reset Decision Tree Results</button>
+  <button (click)="proceed()" class='btn btn-info'>Proceed to Phase-2: Fuzzy TOPSIS</button>
+  <li class="list-inline-item"><a (click)="proceed()" class="btn btn-info" routerLink="/alternatives">Phase-2: Fuzzy
+    TOPSIS</a></li>
+
 </ng-container>
 <br>
 <br>
-<button (click)="reset()">RESET</button>
+
 
 <hr/>
 <span>Current node JSON</span>&nbsp;

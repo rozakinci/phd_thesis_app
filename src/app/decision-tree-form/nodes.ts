@@ -1,3 +1,5 @@
+import {Alternative} from "../model/alternative";
+
 export type IDecisionTree = Array<IIndexedTreeNode>;
 
 export interface IIndexedTreeNode {
@@ -8,21 +10,41 @@ export interface IIndexedTreeNode {
 export class TreeNode {
   public readonly id: nodeId;
   public readonly description: string;
+  public readonly resultList: Alternative[];
   public decision: boolean | null;
   public readonly yesId: nodeId | null;
   public readonly noId: nodeId | null;
+
+  // constructor(
+  //   id: nodeId,
+  //   description: string,
+  //   yesId: nodeId | null,
+  //   noId: nodeId | null
+  // ) {
+  //   this.id = id;
+  //   this.description = description;
+  //   this.decision = null; // <-- must be null on creation. wait for decision from user.
+  //   this.yesId = yesId;
+  //   this.noId = noId;
+  // }
 
   constructor(
     id: nodeId,
     description: string,
     yesId: nodeId | null,
-    noId: nodeId | null
+    noId: nodeId | null,
+    resultList: string
   ) {
     this.id = id;
     this.description = description;
     this.decision = null; // <-- must be null on creation. wait for decision from user.
     this.yesId = yesId;
     this.noId = noId;
+    this.resultList = [];
+    for (const string of resultList.split(",")) {
+
+      this.resultList.push(new Alternative(string, 0));
+    }
   }
 }
 
@@ -59,116 +81,137 @@ export const nodeList = {
     'data',
     'Do you want your method be dependent only on data?',
     'classification',
-    'humanJudgementAndDataBoth'
+    'humanJudgementAndDataBoth',
+    ""
   ),
   classification: new TreeNode(
     'classification',
     'Do you want to perform classification?',
     'sizeForClassificationLarge',
-    'prediction'
+    'prediction',
+    ""
   ),
   humanJudgementAndDataBoth: new TreeNode(
     'humanJudgementAndDataBoth',
     'Do you want to construct a model using both human judgement and data?',
     'bbn',
-    'humanJudgement'
+    'humanJudgement',
+    ""
   ),
   humanJudgement: new TreeNode(
     'humanJudgement',
     'Do you want to construct a model based on only human judgement?',
     'bbnfis',
-    'sorry'
+    'sorry',
+    ""
   ),
   sizeForClassificationLarge: new TreeNode(
     'sizeForClassificationLarge',
     'Do you have a large sized dataset? (Sample Size > 1000)',
     'largeClassification',
-    'sizeForClassificationMedium'
+    'sizeForClassificationMedium',
+    ""
   ),
   sizeForClassificationMedium: new TreeNode(
     'sizeForClassificationMedium',
     'Do you have a medium sized dataset? (500 < Sample Size < 1000)',
     'mediumClassification',
-    'sizeForClassificationSmall'
+    'sizeForClassificationSmall',
+    ""
   ),
   sizeForClassificationSmall: new TreeNode(
     'sizeForClassificationSmall',
     'Do you have a small sized dataset? (100 < Sample Size < 500)',
     'smallClassification',
-    'humanJudgementWithoutData'
+    'humanJudgementWithoutData',
+    ""
   ),
   prediction: new TreeNode(
     'prediction',
     'Do you want to make a numeric prediction?',
     'sizeForPredictionLarge',
-    'sorry'
+    'sorry',
+    ""
   ),
   sizeForPredictionLarge: new TreeNode(
     'sizeForPredictionLarge',
     'Do you have a large sized dataset? (Sample Size > 1000)',
     'largePrediction',
-    'sizeForPredictionMedium'
+    'sizeForPredictionMedium',
+    ""
   ),
   sizeForPredictionMedium: new TreeNode(
     'sizeForPredictionMedium',
     'Do you have a medium sized dataset? (500 < Sample Size < 1000)',
     'mediumPrediction',
-    'sizeForPredictionSmall'
+    'sizeForPredictionSmall',
+    ""
   ),
   sizeForPredictionSmall: new TreeNode(
     'sizeForPredictionSmall',
     'Do you have a small sized dataset? (100 < Sample Size < 500)',
     'smallPrediction',
-    'humanJudgementWithoutData'
+    'humanJudgementWithoutData',
+    ""
   ),
   sorry: new TreeNode(
     'sorry',
     'Sorry! No method recommendation for this case :(',
     null,
-    null
+    null,
+    ""
   ),
   humanJudgementWithoutData: new TreeNode(
     'humanJudgementWithoutData',
     'Looks like your dataset size is not enough for data dependent method usage. Do you want to construct human judgement based model?',
     'bbnfis',
-    'sorry'
+    'sorry',
+    ""
   ),
-  bbnfis: new TreeNode('bbnfis', 'Filtered methods are: BBN & FIS', null, null),
-  bbn: new TreeNode('bbn', 'Your only options is using BBN method!', null, null),
+  bbnfis: new TreeNode('bbnfis', 'Filtered methods are: BBN & FIS', null, null,
+    "BBN,FRBC"),
+  bbn: new TreeNode('bbn', 'Your only options is using BBN method!', null, null,
+    "BBN,"),
   smallClassification: new TreeNode(
     'smallClassification',
-    'Filtered methods are: ......',
+    'Filtered methods are: BBN, FIS, LogR, NB',
     null,
-    null
+    null,
+    "BBN,FRBC,LogR,NB"
   ),
   mediumClassification: new TreeNode(
     'mediumClassification',
-    'Filtered methods are: ......',
+    'Filtered methods are: ANN, BBN, FIS, LogR, NB, SVM',
     null,
-    null
+    null,
+    "ANN,BBN,FRBC,LogR,NB,SVM"
   ),
   largeClassification: new TreeNode(
     'largeClassification',
-    'Filtered methods are: ......',
+    'Filtered methods are: ANN, BBN, DT, FIS, LogR, SVM',
     null,
-    null
+    null,
+    "ANN,BBN,DT,FRBC,LogR,SVM"
   ),
   smallPrediction: new TreeNode(
     'smallPrediction',
-    'Filtered methods are: ......',
+    'Filtered methods are: BBN, FIS, LinR',
     null,
-    null
+    null,
+    "BBN,FRBC,LinR"
   ),
   mediumPrediction: new TreeNode(
     'mediumPrediction',
-    'Filtered methods are: ......',
+    'Filtered methods are: ANN, BBN, FIS, LinR, SVM',
     null,
-    null
+    null,
+    "ANN,BBN,FRBC,LinR,SVM"
   ),
   largePrediction: new TreeNode(
     'largePrediction',
-    'Filtered methods are: ......',
+    'Filtered methods are: ANN, BBN, DT, FIS, LinR, SVM',
     null,
-    null
+    null,
+    "ANN,BBN,DT,FRBC,LinR,SVM"
   )
 };
