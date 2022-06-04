@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Alternative} from "../model/alternative";
+import {Dataset} from "../model/dataset";
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import {Alternative} from "../model/alternative";
 export class McdaService {
 
 
-  public possibleAlternatives: string[] = [];
+  public datasetList: Dataset[] = [];
   public possibleAlternativeList: Alternative[] = [];
 
 
