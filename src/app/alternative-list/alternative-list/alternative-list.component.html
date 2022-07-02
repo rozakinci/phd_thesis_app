@@ -1,11 +1,5 @@
 <div class="card my-5">
 
-  <ul>
-    <li *ngFor="let alternative of alternatives">
-      {{ alternative.name }}
-    </li>
-  </ul>
-
   <div class='row'>
     <div class='col-md-2'>
       <button (click)='clearAllWeights()'
@@ -89,36 +83,5 @@
       </div>
     </div>
 
-
-    <table class="table table-bordered table-striped">
-      <thead class="thead-dark">
-      <tr>
-        <th scope="col">Method Name</th>
-        <th scope="col">Causality</th>
-        <th scope="col">Uncertainty</th>
-        <th scope="col">Missing Data</th>
-        <th scope="col">Outlier</th>
-        <th scope="col">Interpretability</th>
-        <th scope="col">Complexity</th>
-        <th scope="col">Accuracy</th>
-        <th scope="col">Maintainability</th>
-        <th scope="col">Speed</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let alternative of alternatives">
-        <td>{{ alternative.name }}</td>
-        <!--        <td>{{ alternative.causality }}</td>-->
-        <!--        <td>{{ alternative.uncertainty }}</td>-->
-        <!--        <td>{{ alternative.missingData }}</td>-->
-        <!--        <td>{{ alternative.outlier }}</td>-->
-        <!--        <td>{{ alternative.interpretability }}</td>-->
-        <!--        <td>{{ alternative.complexity }}</td>-->
-        <!--        <td>{{ alternative.accuracy }}</td>-->
-        <!--        <td>{{ alternative.maintainability }}</td>-->
-        <!--        <td>{{ alternative.speed }}</td>-->
-      </tr>
-      </tbody>
-    </table>
   </div>
 </div>

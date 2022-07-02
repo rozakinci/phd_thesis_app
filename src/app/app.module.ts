@@ -9,6 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {DecisionTreeFormComponent} from "./decision-tree-form/decision-tree-form.component";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
+import {McdaService} from "./service/mcda.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {CommonModule} from "@angular/common";
     HttpClientModule,
     FormsModule
   ],
-  providers: [AlternativeService],
+  providers: [AlternativeService, McdaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
